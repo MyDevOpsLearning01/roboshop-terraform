@@ -1,5 +1,5 @@
 dev-init:
-    rm -f .terraform/terraform.tfstate
+	rm -f .terraform/terraform.tfstate
 	terraform init -backend-config=./environments/dev/state.tfvars
 
 dev-plan:
@@ -9,7 +9,7 @@ dev-apply:
 	terraform apply -var-file=./environments/dev/main.tfvars
 
 prod-init:
-    rm -f .terraform/terraform.tfstate
+	rm -f .terraform/terraform.tfstate
 	terraform init -backend-config=./environments/prod/state.tfvars
 
 prod-plan:
