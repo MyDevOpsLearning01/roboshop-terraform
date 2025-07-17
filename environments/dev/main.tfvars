@@ -1,33 +1,33 @@
 instances = {
   frontend = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   mongodb  = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   redis    = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   rabbitmq = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   mysql = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   cart = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   catalogue = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   user = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   payment = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
   shipping = {
-    default = "t3.small"
+    instance_type  = "t3.small"
   }
 }
 
