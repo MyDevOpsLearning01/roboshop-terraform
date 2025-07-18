@@ -4,5 +4,5 @@ module "tools" {
   ami           = var.ami
   instance_type = each.value["t3.small"]
   name          = each.key
-  zone_id       = ""
+  zone_id       = var.zone_id
 }
