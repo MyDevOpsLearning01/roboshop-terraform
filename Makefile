@@ -30,7 +30,7 @@ prod-apply: prod-init ## Terraform apply for prod
 prod-destroy: prod-init ## Terraform destroy for prod
 	terraform destroy -var-file=./environments/prod/main.tfvars -auto-approve -var token=$(token)
 
-tools-infra: ## tools infra
+tools-infra: ## tools infra commands
 	git pull
 	rm -f .terraform/terraform.tfstate
 	cd tools ; terraform init ; terraform apply -auto-approve -var token=$(token)
