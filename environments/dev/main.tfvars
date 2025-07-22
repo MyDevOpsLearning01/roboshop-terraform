@@ -1,7 +1,7 @@
 instances = {
-  frontend = {
-    instance_type  = "t3.small"
-  }
+  # frontend = {
+  #   instance_type  = "t3.small"
+  # }
   mongodb  = {
     instance_type  = "t3.small"
   }
