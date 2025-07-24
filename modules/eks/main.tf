@@ -3,7 +3,7 @@ resource "aws_eks_cluster" "main" {
   role_arn = aws_iam_role.cluster.arn
   version  = "1.33"
   vpc_config {
-    subnet_ids = ["subnet-0d6e5bfe1bc583e43", "subnet-023f4d7f92ea32b25", "subnet-0e0112f32da29a751"]
+    subnet_ids = ["subnet-0d6e5bfe1bc583e43", "subnet-023f4d7f92ea32b25"]
   }
 }
 
@@ -113,7 +113,7 @@ resource "aws_eks_node_group" "example" {
   cluster_name    = aws_eks_cluster.main.name
   node_group_name = "nodeg-1"
   node_role_arn   = aws_iam_role.example.arn
-  subnet_ids      = ["subnet-05f2d527e96f275c9", "subnet-0506db159acceacf5"]
+  subnet_ids      = ["subnet-0d6e5bfe1bc583e43", "subnet-023f4d7f92ea32b25"]
 
   scaling_config {
     desired_size = 1
