@@ -11,6 +11,9 @@ variable "tools" {
     vault = {
       instance_type = "t3.small"
     }
+    github-runnder = {
+      instance_type = "t3.small"
+    }
   }
 }
 
