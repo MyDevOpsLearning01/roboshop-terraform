@@ -10,3 +10,4 @@ jobs:
         run: make dev-apply token=${vault_token}
         env:
           vault_token: ${{ secrets.VAULT_TOKEN }}
+          # check
