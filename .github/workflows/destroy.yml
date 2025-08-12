@@ -1,4 +1,4 @@
-name: Apply
+name: Destroy
 on:
   workflow_dispatch:
 jobs:
@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Terraform Apply
-        run: make dev-destroy token=${vault_token}
+        run: make dev-apply token=${vault_token}
         env:
           vault_token: ${{ secrets.VAULT_TOKEN }}
