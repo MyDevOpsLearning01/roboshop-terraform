@@ -10,3 +10,9 @@ provider "vault" {
   address        = "http://vault-internal.maidevops.fun:8200"
   token          = var.token
 }
+
+provider "helm" {
+  kubernetes = {
+    config_path = "~/.kube/config"
+  }
+}
