@@ -46,18 +46,18 @@ databases = {
     instance_type = "t3.small"
     disk_size     = 20
   }
-  # mongodb = {
-  #   instance_type = "t3.small"
-  #   disk_size     = 20
-  # }
-  # redis = {
-  #   instance_type = "t3.small"
-  #   disk_size     = 20
-  # }
-  # rabbitmq = {
-  #   instance_type = "t3.small"
-  #   disk_size     = 20
-  # }
+  mongodb = {
+    instance_type = "t3.small"
+    disk_size     = 20
+  }
+  redis = {
+    instance_type = "t3.small"
+    disk_size     = 20
+  }
+  rabbitmq = {
+    instance_type = "t3.small"
+    disk_size     = 20
+  }
 }
 
 
@@ -74,6 +74,11 @@ eks = {
       one = {
         min_nodes = 1
         max_nodes = 10
+      }
+    }
+    access = {
+      workstation = {
+        principal_arn = "arn:aws:iam::804756348441:role/workstation-role"
       }
     }
   }
