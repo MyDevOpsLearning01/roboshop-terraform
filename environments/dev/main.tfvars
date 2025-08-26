@@ -72,7 +72,7 @@ eks = {
     subnet_ids  = ["subnet-0d6e5bfe1bc583e43", "subnet-023f4d7f92ea32b25"]
     node_groups = {
       one = {
-        min_nodes = 1
+        min_nodes = 2
         max_nodes = 10
       }
     }
@@ -80,12 +80,12 @@ eks = {
       workstation = {
         principal_arn = "arn:aws:iam::804756348441:role/workstation-role"
         access_scope  = "cluster"
-        policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
+        policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
       }
       github-runner = {
         principal_arn = "arn:aws:iam::804756348441:role/github-runner-ec2-role"
         access_scope  = "cluster"
-        policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
+        policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
       }
     }
   }
